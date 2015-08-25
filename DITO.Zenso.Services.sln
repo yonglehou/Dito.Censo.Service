@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DITO.Zenso.Services.TestHost", "DITO.Zenso.Services.TestHost\DITO.Zenso.Services.TestHost.csproj", "{56ED8A9E-5636-4C6E-A288-7BF485252BEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DITO.Zenso.Services.TestClient", "DITO.Zenso.Services.TestClient\DITO.Zenso.Services.TestClient.csproj", "{192A0C79-5B9E-4842-AD8A-1B9628875F13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DITO.Zenso.Services.Messages", "DITO.Zenso.Services.Messages\DITO.Zenso.Services.Messages.csproj", "{9A32D431-C898-4D9F-A804-4095FC91C5E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DITO.Zenso.Services.Writes", "DITO.Zenso.Services.Writes\DITO.Zenso.Services.Writes.csproj", "{0DE598A6-2FE2-4DC5-94AA-A1D143697CC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DITO.Zenso.Services.Installer", "DITO.Zenso.Services.Installer\DITO.Zenso.Services.Installer.csproj", "{9B0D5B7A-BDFB-4843-97F9-BDE06D31BCA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E90DCBA1-5602-464F-81A9-AE34F4F2BB23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "References", "References", "{2859CED7-AE7E-4B21-B4C1-68AA893B5139}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\References\Microsoft.Web.Administration.dll = Solution Items\References\Microsoft.Web.Administration.dll
+		Solution Items\References\Microsoft.Web.Management.dll = Solution Items\References\Microsoft.Web.Management.dll
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DITO.Zenso.Services.Setup", "DITO.Zenso.Services.WasSetup\DITO.Zenso.Services.WasSetup.vdproj", "{19FB03F0-AE82-4CE6-84BC-68944B573F4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Img", "Img", "{B6B5AA16-7C6B-4DE6-9968-01F6898F6E7B}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Img\process.ico = Solution Items\Img\process.ico
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{2981A82C-1B8F-4D72-BB73-6A69500BF4F1}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Deployment\DITO.Services.wcfi = Solution Items\Deployment\DITO.Services.wcfi
+		Solution Items\Deployment\web.config = Solution Items\Deployment\web.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{9ADAF325-E49A-4587-9A4E-26779A72B58B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{3FCE802B-0BF3-412B-8BD7-3180E7C97DF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56ED8A9E-5636-4C6E-A288-7BF485252BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56ED8A9E-5636-4C6E-A288-7BF485252BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56ED8A9E-5636-4C6E-A288-7BF485252BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56ED8A9E-5636-4C6E-A288-7BF485252BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{192A0C79-5B9E-4842-AD8A-1B9628875F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192A0C79-5B9E-4842-AD8A-1B9628875F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192A0C79-5B9E-4842-AD8A-1B9628875F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192A0C79-5B9E-4842-AD8A-1B9628875F13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A32D431-C898-4D9F-A804-4095FC91C5E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A32D431-C898-4D9F-A804-4095FC91C5E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A32D431-C898-4D9F-A804-4095FC91C5E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A32D431-C898-4D9F-A804-4095FC91C5E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DE598A6-2FE2-4DC5-94AA-A1D143697CC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DE598A6-2FE2-4DC5-94AA-A1D143697CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DE598A6-2FE2-4DC5-94AA-A1D143697CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DE598A6-2FE2-4DC5-94AA-A1D143697CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0D5B7A-BDFB-4843-97F9-BDE06D31BCA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0D5B7A-BDFB-4843-97F9-BDE06D31BCA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0D5B7A-BDFB-4843-97F9-BDE06D31BCA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0D5B7A-BDFB-4843-97F9-BDE06D31BCA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19FB03F0-AE82-4CE6-84BC-68944B573F4B}.Debug|Any CPU.ActiveCfg = Debug
+		{19FB03F0-AE82-4CE6-84BC-68944B573F4B}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A32D431-C898-4D9F-A804-4095FC91C5E6} = {9ADAF325-E49A-4587-9A4E-26779A72B58B}
+		{0DE598A6-2FE2-4DC5-94AA-A1D143697CC2} = {9ADAF325-E49A-4587-9A4E-26779A72B58B}
+		{9B0D5B7A-BDFB-4843-97F9-BDE06D31BCA2} = {3FCE802B-0BF3-412B-8BD7-3180E7C97DF3}
+		{2859CED7-AE7E-4B21-B4C1-68AA893B5139} = {E90DCBA1-5602-464F-81A9-AE34F4F2BB23}
+		{19FB03F0-AE82-4CE6-84BC-68944B573F4B} = {3FCE802B-0BF3-412B-8BD7-3180E7C97DF3}
+		{B6B5AA16-7C6B-4DE6-9968-01F6898F6E7B} = {E90DCBA1-5602-464F-81A9-AE34F4F2BB23}
+		{2981A82C-1B8F-4D72-BB73-6A69500BF4F1} = {E90DCBA1-5602-464F-81A9-AE34F4F2BB23}
+	EndGlobalSection
+EndGlobal

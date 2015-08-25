@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceInstaller>
+  <Instance name="DITO.Zenso.Services.Writes.ZensoAdministration">
+    <Definition>
+      <Service>
+        <Configuration>
+          <Name>1.0.0.0 DITO.Zenso.Services.Writes.ZensoAdministration</Name>
+          <Description>Servicio de administración de zenso</Description>
+          <Assembly>DITO.Zenso.Services.Writes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+          <Contract>DITO.Zenso.Services.Messages.IZensoAdministration</Contract>
+          <ConfigurationFile></ConfigurationFile>
+          <AutomaticStart>true</AutomaticStart>
+          <LoadAssemblyFromLocalPath>true</LoadAssemblyFromLocalPath>
+        </Configuration>
+      </Service>
+    </Definition>
+    <Configuration>
+      <service name="DITO.Zenso.Services.Writes.ZensoAdministration">
+        <endpoint address="http://localhost:2280/DITO/Services/Zenso/"
+                  binding="webHttpBinding" name="ZensoAdministrationService" contract="DITO.Services.Messages.IZensoAdministration" />
+      </service>
+      <RelativeAddress>ZensoAdministration.svc</RelativeAddress>
+    </Configuration>
+  </Instance>
+</ServiceInstaller>
