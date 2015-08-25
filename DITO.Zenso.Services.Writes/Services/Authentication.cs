@@ -57,17 +57,5 @@ namespace DITO.Zenso.Services.Writes
 
             return response;
         }
-
-        /// <summary>
-        /// ImageToByteArray
-        /// </summary>
-        /// <param name="Image"></param>
-        /// <returns></returns>
-        private static byte[] ImageToByteArray(System.Drawing.Image Image)
-        {
-            System.IO.MemoryStream ms = new System.IO.MemoryStream();
-            Image.Save(ms, System.Drawing.Imaging.ImageFormat.Gif);
-            return ms.ToArray();
-        }
     }
 }
