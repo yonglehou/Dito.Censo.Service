@@ -36,15 +36,15 @@ namespace DITO.Zenso.Services.TestHost
             {
                 rtbOutput.AppendText(Environment.NewLine);
 
-                var dbLink = GetDefaultDatabase();
+                //var dbLink = GetDefaultDatabase();
 
-                rtbOutput.AppendText(string.Format("Base de Datos: {0}", Environment.NewLine));
-                rtbOutput.AppendText(dbLink.Key);
+                //rtbOutput.AppendText(string.Format("Base de Datos: {0}", Environment.NewLine));
+                //rtbOutput.AppendText(dbLink.Key);
 
-                using (var connection = GetConnection(dbLink.Value, dbLink.Key))
-                    rtbOutput.AppendText(string.Format("- (OK) {0}", Environment.NewLine));
+                //using (var connection = GetConnection(dbLink.Value, dbLink.Key))
+                //    rtbOutput.AppendText(string.Format("- (OK) {0}", Environment.NewLine));
 
-                rtbOutput.AppendText(Environment.NewLine);
+                //rtbOutput.AppendText(Environment.NewLine);
 
                 HostSevices = new Dictionary<string, ServiceHost>();
 
