@@ -22,7 +22,7 @@ namespace DITO.Zenso.Services.Messages
         /// Photo
         /// </summary>
         [DataMember]
-        public byte[] Photo { get; set; }
+        public string PhotoURL { get; set; }
         /// <summary>
         /// Active Route
         /// </summary>

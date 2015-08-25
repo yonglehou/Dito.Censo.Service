@@ -22,9 +22,7 @@ namespace DITO.Zenso.Services.Writes
         public LoginResponse Login(LoginRequest request)
         {
             CultureConfig.SetRegionalConfiguration();
-            var response = new LoginResponse() { 
-                User = new User() { UserId = "001", FullName = request.User } 
-            };
+            var response = new LoginResponse();
 
             response.IsAuthenticated = true;
             response.AuthenticatedErrorMsg = string.Empty;
@@ -55,7 +53,21 @@ namespace DITO.Zenso.Services.Writes
 
             response.Routes.Add(newRoute);
 
+            response.User = new User() { UserId = "001", FullName = request.User, ActiveRoute = newRoute, PhotoURL = "https://cdn3.iconfinder.com/data/icons/3d-printing-icon-set/512/User.png" };
+
             return response;
+        }
+
+        /// <summary>
+        /// ImageToByteArray
+        /// </summary>
+        /// <param name="Image"></param>
+        /// <returns></returns>
+        private static byte[] ImageToByteArray(System.Drawing.Image Image)
+        {
+            System.IO.MemoryStream ms = new System.IO.MemoryStream();
+            Image.Save(ms, System.Drawing.Imaging.ImageFormat.Gif);
+            return ms.ToArray();
         }
     }
 }
