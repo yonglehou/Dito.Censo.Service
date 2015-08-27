@@ -13,6 +13,6 @@ namespace DITO.Zenso.Services.Messages
         /// DateTime
         /// </summary>
         [DataMember]
-        public DateTime DateTime { get; set; }
+        public DateTime? DateTime { get; set; }
     }
 }

@@ -17,7 +17,7 @@ namespace DITO.Zenso.Services.Messages
         /// <summary>
         /// Valida la conectividad del servicio y la base de datos
         /// </summary>
-        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        [WebGet(ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped)]
         [OperationContract]
         bool Ping();
 

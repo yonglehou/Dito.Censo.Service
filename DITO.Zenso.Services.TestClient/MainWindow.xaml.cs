@@ -114,6 +114,7 @@ namespace DITO.Zenso.Services.TestClient
             using (var client = CreateClient(zensoAdministrationServiceAddress))
             {
                 var request = new SaveTraceRequest();
+                request.RouteId = 1;
                 request.Points.Add(new TracePoint() { DateTime = DateTime.Now, Latitude = 0.34344d, Longitude = -55.090909d });
                 request.Points.Add(new TracePoint() { DateTime = DateTime.Now, Latitude = 0.786782344d, Longitude = -70.034239d });
 
