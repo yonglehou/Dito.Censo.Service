@@ -53,7 +53,7 @@ namespace DITO.Zenso.Services.Writes
 
             response.Routes.Add(newRoute);
 
-            response.User = new User() { UserId = "001", FullName = request.User, ActiveRoute = newRoute, PhotoURL = "https://cdn3.iconfinder.com/data/icons/3d-printing-icon-set/512/User.png" };
+            response.User = new User() { UserId = "001", FullName = request.User, ActiveRoute = newRoute, PhotoURL = "http://www.hit4hit.org/img/login/user-icon-6.png" };
 
             return response;
         }
