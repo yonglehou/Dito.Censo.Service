@@ -26,6 +26,7 @@ namespace DITO.Zenso.Services.Messages
         /// <summary>
         /// Active Route
         /// </summary>
+        [DataMember]
         public Route ActiveRoute { get; set; }
     }
 }
