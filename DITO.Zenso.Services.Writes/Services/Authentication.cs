@@ -27,7 +27,7 @@ namespace DITO.Zenso.Services.Writes
             response.IsAuthenticated = true;
             response.AuthenticatedErrorMsg = string.Empty;
 
-            Route newRoute = new Route() { Id = 1, Name = "Aguacatala", Description = "Aguacatala", Start = System.DateTime.Now, State = 1 };
+            Route newRoute = new Route() { Id = 1, Name = "Aguacatala", Description = "Aguacatala", Start = System.DateTime.Now, State = 2 };
             newRoute.Map.Add(new RouteMapPoint() { Order = 0, Latitude = 6.197776d, Longitude = -75.589886d });
             newRoute.Map.Add(new RouteMapPoint() { Order = 1, Latitude = 6.19656d, Longitude = -75.58553d });
             newRoute.Map.Add(new RouteMapPoint() { Order = 2, Latitude = 6.195494d, Longitude = -75.5852075d });
