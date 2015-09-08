@@ -13,7 +13,23 @@ namespace DITO.Zenso.Services.Writes
         /// </summary>
         public bool Ping()
         {
-            return true;
+            try
+            {
+                using (System.Data.SqlClient.SqlConnection SQLConn = new System.Data.SqlClient.SqlConnection(DBProvider.GetConectionString(null)))
+                {
+                    SQLConn.Open();
+
+                    
+
+                    SQLConn.Close();
+                }
+
+                return true;
+            } 
+            catch
+            {
+                return false;
+            }
         }
         /// <summary>SAMSALCO -04-05-2015 374151 
         /// Realiza el inicio de sesion, devolviendo una entidad de tipo LoginResponse

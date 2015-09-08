@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +45,7 @@
     <Compile Include="Services\Authentication.cs" />
     <Compile Include="Services\ZensoAdministration.cs" />
     <Compile Include="Utils\CultureConfig.cs" />
+    <Compile Include="Utils\DBProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DITO.Zenso.Services.Messages\DITO.Zenso.Services.Messages.csproj">
