@@ -1,5 +1,7 @@
 ﻿using DITO.Zenso.Services.Messages;
 using System;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace DITO.Zenso.Services.Writes
 {
@@ -15,13 +17,28 @@ namespace DITO.Zenso.Services.Writes
         {
             try
             {
-                using (System.Data.SqlClient.SqlConnection SQLConn = new System.Data.SqlClient.SqlConnection(DBProvider.GetConectionString(null)))
+                using (SqlConnection Conn = new SqlConnection(DBProvider.GetConectionString(null)))
                 {
-                    SQLConn.Open();
+                    SqlCommand Cmd = new SqlCommand("SELECT Id, Nom, Ape FROM Empleados ORDER BY Nom", Conn);
+                    Conn.Open();
 
-                    
+                    SqlDataReader reader = Cmd.ExecuteReader();
 
-                    SQLConn.Close();
+                    while (reader.Read())
+                    {
+                        IDataRecord Row = reader as IDataRecord;
+
+                        if (Row != null)
+                        {
+                            var Id = Row[0];
+                            var Nom = Row[1];
+                            var Ape = Row[2];
+                        }
+                    }
+
+                    reader.Close();
+
+                    Conn.Close();
                 }
 
                 return true;
